@@ -2,7 +2,7 @@
 See https://blog.miguelgrinberg.com/post/dynamically-update-your-flask-web-pages-using-turbo-flask for an explanation of what turbo-flask is, and how this sample 
 code works.  Note the dynamic update without a page reload.
 
-For a look at Botstrap buttons, and how to add click events to buttons, see the folloing tutorials:
+For a look at Bootstrap buttons, and how to add click events to buttons, see the folloing tutorials:
 
 Button event videos
 selecting events
