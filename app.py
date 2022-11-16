@@ -1,3 +1,16 @@
+# This version demonstrates the use of turbo_flask.
+# Things to note:
+# 1. Note the call to "threading.Thread(target=update_load).start()"
+#    To understand this, you will have to read about python threading module.
+#    Basically this starts a new process that keeps calling the update_load 
+#    function.
+# 2.  Note the convenience of using templates and how they can be componentized.
+#     For instance, the index.html template includes the base.html template by 
+#     stating: {% extends "base.html" %}.  This will be usefull in creating pieces
+#     of html that can be used in multiple locations.
+#     
+#    
+
 import random
 import re
 import sys
