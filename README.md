@@ -4,6 +4,9 @@ code works.  Note the dynamic update without a page reload.
 
 For a look at Bootstrap buttons, and how to add click events to buttons, see the folloing tutorials:
 
+Installing bootstrap 5 to VSCode:
+https://www.youtube.com/watch?v=pT7SlMYaDFw
+
 Button event videos
 selecting events
 https://www.youtube.com/watch?v=GIZui511DYQ
