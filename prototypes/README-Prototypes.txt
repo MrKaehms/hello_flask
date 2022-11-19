@@ -12,5 +12,10 @@ A couple of good tutorials on getting started with bootstrap and javascript:
 https://youtu.be/PNKy60ah5kI
 https://youtu.be/_E3HkekndFU
 
+The bootstrap website example page:
+https://getbootstrap.com/docs/5.2/examples/
+
+
+
 
 
