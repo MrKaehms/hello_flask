@@ -8,4 +8,9 @@ directory.
 To do prototyping that can be isolated, please create a subdirectory under the prototypes directory,
 with your name, or initials as the subdirectory name.
 
+A couple of good tutorials on getting started with bootstrap and javascript:
+https://youtu.be/PNKy60ah5kI
+https://youtu.be/_E3HkekndFU
+
+
 
