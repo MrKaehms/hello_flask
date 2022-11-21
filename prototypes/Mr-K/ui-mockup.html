@@ -20,13 +20,22 @@
          } else{
            $(this).text('Video On');
         }
+
+
        });
        });
+
+    
+     
+
        </script>
 
     <title>PI Robot UI Prototype</title>
 </head>
 <body>
+
+    
+
     
 
         <div class="row mb-3 text-center">
@@ -51,22 +60,22 @@
 
 
                     <div class="col themed-grid-col">  </div>
-                    <div class="col themed-grid-col"> <button type="button" class="btn btn-primary"> Forward </button></code></div>
+                    <div class="col themed-grid-col"> <button type="button" class="btn btn-primary" onClick="forward()"> Forward </button></code></div>
                     <div class="col themed-grid-col">  </div>
 
                     <div class="col themed-grid-col">  <button type="button" class="btn btn-primary">Left</button></code></div>
-                    <div class="col themed-grid-col"> <button type="button" class="btn btn-primary"> Stop</button></code></div>
+                    <div class="col themed-grid-col"> <button type="button" class="btn btn-primary" onClick="stop()"> Stop</button></code></div>
                     <div class="col themed-grid-col"> <button type="button" class="btn btn-primary">Right</button></code></div>
                    
                     <div class="col themed-grid-col">  </div>
-                    <div class="col themed-grid-col"> <button type="button" class="btn btn-primary"> reverse </button></code></div>
+                    <div class="col themed-grid-col"> <button type="button" class="btn btn-primary" onClick="reverse()"> Reverse </button></code></div>
                     <div class="col themed-grid-col">  </div>
 
                     <div class="col themed-grid-col">  </div>
                     <div class="col themed-grid-col"> <div class="card" style="width: 18rem;">
                         <div class="card">
                             <div class="card-header">
-                             Current Speed:10 (Forward)
+                                <p>Speed: <a id="speed">0</a></p>
                             </div>
                             <div class="card-body"> 
                               <p class="font-small">Use buttons to<br> start, stop, and turn.  
@@ -87,7 +96,40 @@
     </div>
 
 
-    B5
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script>
+        var speed = 0;
+        var inc=0;
+
+        function forward(){
+            if (speed<10){
+              inc=1;
+              setSpeed();
+            }
+        }
+        function reverse (){
+            if (speed>-10){
+              inc=-1;
+              setSpeed();
+            }
+        }
+        function stop (){
+           
+            speed=-1;
+            inc=1;
+            setSpeed();
+        }
+
+        <!--SetSpeed would also do a python call to adjust motors-->
+
+        function setSpeed() {
+            speed += inc;
+            document.getElementById("speed").innerHTML = speed;
+        };
+     
+     </script>
+
 </body>
 </html>
