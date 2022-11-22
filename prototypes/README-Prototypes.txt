@@ -16,6 +16,23 @@ The bootstrap website example page:
 https://getbootstrap.com/docs/5.2/examples/
 
 
+Not sure whether we would have to use something like this or not, since we will probably use turbo-flask, but here is an 
+example of how to call python from javascript:
+
+$.ajax({
+  type: "POST",
+  url: "~/pythoncode.py",
+  data: { param: text}
+}).done(function( o ) {
+   // do something
+});
+
+In the above case, the python code might be a method to adjust the motor controller(s).  If so, the param would be the
+current speed to set the motors to (for the for/rev method)
+See: https://stackoverflow.com/questions/13175510/call-python-function-from-javascript-code
+
+
+
 
 
 
