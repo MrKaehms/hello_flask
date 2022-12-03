@@ -1,3 +1,9 @@
+Examples folder is where you might add sample code and examples directly from the internet.
+Try to reference the source article or repo for anything included here.  Include examples as 
+complete sub directories!
+
+
+======
 Added "flask-video-streaming" example code.
 
 Here are a couple of articles related to this code:
