@@ -4,6 +4,10 @@ import os
 from flask import Flask, render_template, Response
 
 # import camera driver
+# NOTE: This code assumes that the module to import is specified through
+#       setting an environment var "CAMERA"
+#       for instance, "export CAMERA=pi" from the command line to specifiy using the camera_pi.py module
+
 if os.environ.get('CAMERA'):
     Camera = import_module('camera_' + os.environ['CAMERA']).Camera
 else:
@@ -37,4 +41,5 @@ def video_feed():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', threaded=True)
+#    app.run(host='0.0.0.0', threaded=True)
+    app.run(host='192.168.1.115',   threaded=True)
